@@ -12,15 +12,18 @@ public class newTests {
 
       //  System.out.println("Before: " + encryptor.toString());
         encryptor.read();
-        encryptor.join();
+        encryptor.getReaderHelper().join();
         System.out.println("Reading: " + encryptor.toString());
 
         encryptor.encrypt(2);
+        encryptor.getEncryptionHelper().join();
         System.out.println("Encrypting: " + encryptor.toString());
 
 
         System.out.println("Writing: " + encryptor.toString());
 
+
+        encryptor.join();
 
     }
 }

@@ -20,8 +20,17 @@ public class Encryptor {
     private String outputFileName;
     private CharacterStateArray array = new CharacterStateArray();
 
-    private ReaderHelper readerHelper;
-    private EncryptionHelper encryptionHelper;
+     ReaderHelper readerHelper;
+
+    public EncryptionHelper getEncryptionHelper() {
+        return encryptionHelper;
+    }
+
+    public ReaderHelper getReaderHelper() {
+        return readerHelper;
+    }
+
+    EncryptionHelper encryptionHelper;
 
     public Encryptor(String inputFile, String outputFile) {
         this.inputFileName = inputFile;
@@ -46,7 +55,7 @@ public class Encryptor {
 
     public void join(){
         readerHelper.join();
-       // encryptionHelper.join();
+        encryptionHelper.join();
     }
 
 
@@ -63,7 +72,7 @@ public class Encryptor {
         //System.out.println("Character: " + state.getCharacter() + "State: " + state.getState() + "Position: " + state.getPosition());
         this.array.add(state);
     }
-    public String toString(){
+    public synchronized String toString(){
       //  System.out.print(this.array.toString());
         return this.array.toString();
     }

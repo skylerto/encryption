@@ -46,11 +46,12 @@ public class EncryptionHelper implements Runnable {
 
     @Override
     public void run() {
-        while (!encryptor.getArray().anyEncryptable());
         CharacterState c;
         synchronized (this) {
+
             while (encryptor.getArray().anyEncryptable()) {
                 c = encryptor.getArray().getEncryptable();
+                c.setCharacter(this.encryptChar(c.getCharacter()));
                 encryptor.getArray().encrypted(c);
             }
         }

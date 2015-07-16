@@ -42,7 +42,7 @@ public class ReaderHelper implements Runnable {
                 encryptor.add(current);
             }
         }
-        encryptor.toString();
+//        encryptor.toString();
     }
 
     public void start(){
