@@ -18,6 +18,7 @@ usage: encrypt
 
 ## Direct
 
+Get it here as a github release ->  https://github.com/skylerto/encryption/releases/tag/0.1.0
 ### Encrypt Everywhere
 
 From within the extracted zip
@@ -43,8 +44,13 @@ gradle build
 See usage
 
 ### Encrypt Everywhere
-```bash
 
+From within the project
+```bash
+mv Encryption/build/distributions/Encryption-0.1.0.zip ~/
+unzip ~/Encryption-0.1.0.zip
+mv ~/Encryption-0.1.0/bin/Encryption ~/bin
+echo PATH="~/bin:$PATH" >> ~/.bash_profile
 ```
 
 
