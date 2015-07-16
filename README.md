@@ -1,4 +1,4 @@
-# encryption
+# Multi Threaded Encryption in Java
 
 [![Build Status](https://travis-ci.org/skylerto/encryption.svg?branch=master)](https://travis-ci.org/skylerto/encryption)
 
