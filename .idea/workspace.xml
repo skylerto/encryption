@@ -73,8 +73,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7822581">
-              <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.7096774">
+              <caret line="49" column="3" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -998,7 +998,13 @@
       <option name="project" value="LOCAL" />
       <updated>1437059680453</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update readme instructions for usage">
+      <created>1437061386349</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1437061386349</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1053,7 +1059,8 @@
     <MESSAGE value="updated readme.md" />
     <MESSAGE value="gradle now exports executable" />
     <MESSAGE value="gradle now runs tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="gradle now runs tests" />
+    <MESSAGE value="update readme instructions for usage" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme instructions for usage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1388,8 +1395,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7822581">
-          <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.7096774">
+          <caret line="49" column="3" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
           <folding />
         </state>
       </provider>

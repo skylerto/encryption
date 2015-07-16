@@ -47,7 +47,7 @@ See usage
 
 From within the project
 ```bash
-mv Encryption/build/distributions/Encryption-0.1.0.zip ~/
+mv build/distributions/Encryption-0.1.0.zip ~/
 unzip ~/Encryption-0.1.0.zip
 mv ~/Encryption-0.1.0/bin/Encryption ~/bin
 echo PATH="~/bin:$PATH" >> ~/.bash_profile
