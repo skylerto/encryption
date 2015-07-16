@@ -41,34 +41,20 @@ public class Main {
 
                 list = new ArrayList();
 
-                // Make requireds
+
                 FileHandler fileHandler = new FileHandler(inFile, outFile);
+
                 MyEncryptor encryptor = new MyEncryptor(key);
 
-                // Handle file input
                 ArrayList inputList = fileHandler.readInput(list);
-                System.out.println(inputList);
 
-                // Handle encryption
-                ArrayList encryptList = encryptor.encrypt(inputList);
-                System.out.println(encryptList);
+                if(inputList.get(0).getClass().equals(Character.class)) {
+                    ArrayList encryptList = encryptor.encrypt(inputList);
+                    ArrayList outList = fileHandler.output(encryptList);
+                } else {
+                    System.out.println("Encryption failed, our fault!");
+                }
 
-                // Handle output
-
-
-                ArrayList outList = fileHandler.output(encryptList);
-                System.out.println(outList);
-
-//                //int key = 1;
-//                if (reader.read()){
-//                    writer.write(outFile);
-//                }
-//
-//                int keyDec = -key;
-//                String decFile = "decFile.txt";
-//                if(reader.read()){
-//                    writer.write(decFile);
-//                }
 
 
             } else {
@@ -78,7 +64,7 @@ public class Main {
 
 
         } catch(Exception e){
-
+            e.printStackTrace();
         }
 
 

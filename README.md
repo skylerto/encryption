@@ -6,6 +6,48 @@
 
 Working on an application as I work my way through the book "Java Concurrency in Practise" by Brian Goetz.
 
+# Usage
+
+``` bash
+$ ./Encryption
+usage: encrypt
+ -in <arg>    input file name
+ -key <arg>   integer encryption value
+ -out <arg>   output file name
+```
+
+## Direct
+
+### Encrypt Everywhere
+
+From within the extracted zip
+```bash
+mv bin/Encryption ~/bin
+echo PATH="~/bin:$PATH" >> ~/.bash_profile
+```
+
+## From compile from source
+
+- Get it
+```bash
+git clone http://github.com/skylerto/encryption
+```
+
+- Compile it
+```bash
+cd Encryption
+gradle build
+```
+
+- Execute it
+See usage
+
+### Encrypt Everywhere
+```bash
+mv 
+```
+
+
 # License
 
 The MIT License (MIT)
