@@ -10,6 +10,7 @@ mainClassName = "Main"
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 
