@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c42b07e1-7d17-44af-8551-23362992e817" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/CharacterState.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/CharacterStateArray.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/binary/unitTest/output.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/binary/unitTest/output.bin.idx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/test-results/binary/unitTest/results.bin" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/MyReader.class" afterPath="$PROJECT_DIR$/build/classes/main/MyReader.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/MyReaderTest.class" afterPath="$PROJECT_DIR$/build/classes/test/MyReaderTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/cache.properties.lock" />
@@ -16,9 +11,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/binary/test/results.bin" afterPath="$PROJECT_DIR$/build/test-results/binary/test/results.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/classes/MyEncryptorTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/classes/MyEncryptorTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyReader.java" afterPath="$PROJECT_DIR$/src/main/java/MyReader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/classes/MyReaderTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/classes/MyReaderTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/MyReaderTest.java" afterPath="$PROJECT_DIR$/src/test/java/MyReaderTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/TEST-MyEncryptorTest.xml" afterPath="$PROJECT_DIR$/build/test-results/TEST-MyEncryptorTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/TEST-MyReaderTest.xml" afterPath="$PROJECT_DIR$/build/test-results/TEST-MyReaderTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/packages/default-package.html" afterPath="$PROJECT_DIR$/build/reports/tests/packages/default-package.html" />
@@ -230,6 +223,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -1203,7 +1201,13 @@
       <option name="project" value="LOCAL" />
       <updated>1437061456885</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="one char at a time added">
+      <created>1437068913462</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1437068913463</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1260,7 +1264,8 @@
     <MESSAGE value="gradle now runs tests" />
     <MESSAGE value="update readme instructions for usage" />
     <MESSAGE value="updated readme title" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated readme title" />
+    <MESSAGE value="one char at a time added" />
+    <option name="LAST_COMMIT_MESSAGE" value="one char at a time added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
