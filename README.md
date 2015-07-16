@@ -44,7 +44,7 @@ See usage
 
 ### Encrypt Everywhere
 ```bash
-mv 
+
 ```
 
 
