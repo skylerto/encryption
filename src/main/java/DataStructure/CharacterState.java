@@ -1,3 +1,5 @@
+package DataStructure;
+
 /**
  * Created by skylerlayne on 2015-07-16.
  */
@@ -36,5 +38,11 @@ public class CharacterState {
 
     public void setCharacter(char character) {
         this.character = character;
+    }
+
+    public String toString(){
+        return "    Character: " + this.character + "\n"
+                + " State: " + this.state + "\n"
+                + " Position: " + this.position;
     }
 }

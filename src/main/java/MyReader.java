@@ -56,7 +56,6 @@ public class MyReader extends Thread {
     public synchronized Character readChar(){
         try {
             if(inputStream.available() > 0) {
-                // add new CharacterState object to Data Structure.
 
                 return new Character((char) inputStream.read());
             }

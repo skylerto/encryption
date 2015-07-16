@@ -1,0 +1,74 @@
+package Encryption;
+
+import DataStructure.CharacterState;
+import DataStructure.CharacterStateArray;
+import MyHelpers.EncryptionHelper;
+import MyHelpers.ReaderHelper;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.ArrayList;
+
+/**
+ * Created by skylerlayne on 2015-07-16.
+ *
+ */
+public class Encryptor {
+
+    private String inputFileName;
+    private String outputFileName;
+    private CharacterStateArray array = new CharacterStateArray();
+
+    private ReaderHelper readerHelper;
+    private EncryptionHelper encryptionHelper;
+
+    public Encryptor(String inputFile, String outputFile) {
+        this.inputFileName = inputFile;
+        this.outputFileName = outputFile;
+       // this.array = new CharacterStateArray();
+    }
+
+    public void read(){
+        readerHelper = new ReaderHelper("test.txt", this);
+        readerHelper.start();
+        readerHelper.start();
+        readerHelper.start();
+    }
+
+    public void encrypt(int key) {
+        encryptionHelper = new EncryptionHelper(key, this);
+        encryptionHelper.start();
+        encryptionHelper.start();
+        encryptionHelper.start();
+
+    }
+
+    public void join(){
+        readerHelper.join();
+       // encryptionHelper.join();
+    }
+
+
+    /* Getters */
+    public String getInputFileName() {
+        return inputFileName;
+    }
+
+    public String getOutputFileName() {
+        return outputFileName;
+    }
+
+    public void add(CharacterState state){
+        //System.out.println("Character: " + state.getCharacter() + "State: " + state.getState() + "Position: " + state.getPosition());
+        this.array.add(state);
+    }
+    public String toString(){
+      //  System.out.print(this.array.toString());
+        return this.array.toString();
+    }
+
+    public CharacterStateArray getArray(){
+        return this.array;
+    }
+}

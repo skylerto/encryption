@@ -1,3 +1,5 @@
+package DataStructure;
+
 import java.util.ArrayList;
 
 /**
@@ -55,6 +57,21 @@ public class CharacterStateArray {
         return characterState;
     }
 
+    @Override
+    public synchronized String toString(){
+        StringBuilder stringBuilder = new StringBuilder();
+        for(CharacterState c : stateArray){
+            //System.out.print(c.getCharacter());
+            stringBuilder.append(c.getCharacter());
+        }
+        //System.out.print(stringBuilder.toString());
+        //return
+        return stringBuilder.toString();
+    }
+
+    public int size(){
+        return stateArray.size();
+    }
 
 
     /* y so circular? */
