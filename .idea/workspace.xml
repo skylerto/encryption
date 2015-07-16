@@ -86,8 +86,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53158706">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.06933744">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -375,7 +375,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2873880791000" />
+        <entry key="$PROJECT_DIR$" value="2873880923000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -986,7 +986,13 @@
       <option name="project" value="LOCAL" />
       <updated>1437059391769</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="gradle now runs tests">
+      <created>1437059584213</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1437059584213</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1040,7 +1046,8 @@
     <MESSAGE value="updated travis.yml" />
     <MESSAGE value="updated readme.md" />
     <MESSAGE value="gradle now exports executable" />
-    <option name="LAST_COMMIT_MESSAGE" value="gradle now exports executable" />
+    <MESSAGE value="gradle now runs tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="gradle now runs tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1378,8 +1385,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53158706">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.06933744">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
           <folding />
         </state>
       </provider>
