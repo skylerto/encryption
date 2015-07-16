@@ -6,6 +6,14 @@
 
 Working on an application as I work my way through the book "Java Concurrency in Practise" by Brian Goetz.
 
+# Learning Outcomes
+
+- A more indepth knowledge of threads in OO programming.
+
+## Sublearning Goals
+- Gradle builds in Java
+- Using the [Apache Commons CLI](https://commons.apache.org/proper/commons-cli/) for building Java CLIs
+
 # License
 
 The MIT License (MIT)
