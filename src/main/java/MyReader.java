@@ -10,10 +10,17 @@ import java.util.ArrayList;
 public class MyReader extends Thread {
 
     private File file;
+    private FileInputStream inputStream;
 
 
     public MyReader(File file){
         this.file = file;
+        try {
+            this.inputStream = new FileInputStream(this.file);
+        } catch (Exception e){
+            System.out.println("Error initializing FileInputStream.\n       - Something wrong with input file.");
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -37,6 +44,28 @@ public class MyReader extends Thread {
             e.printStackTrace();
         }
         return list;
+    }
+
+    /* Synchronized get method */
+
+    /**
+     * Synchronized the reads from the file.
+     *
+     * @return The next Character from the input stream.
+     */
+    public synchronized Character readChar(){
+        try {
+            if(inputStream.available() > 0) {
+                // add new CharacterState object to Data Structure.
+
+                return new Character((char) inputStream.read());
+            }
+        } catch (Exception e){
+
+            return new Character('\0');
+        }
+
+        return new Character('\0');
     }
 
 

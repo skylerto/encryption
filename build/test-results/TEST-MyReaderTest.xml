@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MyReaderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-07-16T15:05:41" hostname="eduroam-95.eduroam.yorku.ca" time="0.0">
+<testsuite name="MyReaderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-07-16T15:54:44" hostname="eduroam-95.eduroam.yorku.ca" time="0.002">
   <properties/>
-  <testcase name="testRead" classname="MyReaderTest" time="0.0"/>
+  <testcase name="testRead" classname="MyReaderTest" time="0.002"/>
+  <testcase name="testReadChar" classname="MyReaderTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
