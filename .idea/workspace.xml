@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c42b07e1-7d17-44af-8551-23362992e817" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/DataStructure/CharacterStateArray.class" afterPath="$PROJECT_DIR$/build/classes/main/DataStructure/CharacterStateArray.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/MyHelpers/EncryptionHelper.class" afterPath="$PROJECT_DIR$/build/classes/main/MyHelpers/EncryptionHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/Encryption/Encryptor.class" afterPath="$PROJECT_DIR$/build/classes/main/Encryption/Encryptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/MyHelpers/ReaderHelper.class" afterPath="$PROJECT_DIR$/build/classes/main/MyHelpers/ReaderHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/MyHelpers/WriterHelper.class" afterPath="$PROJECT_DIR$/build/classes/main/MyHelpers/WriterHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/newTests.class" afterPath="$PROJECT_DIR$/build/classes/main/newTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/binary/test/results.bin" afterPath="$PROJECT_DIR$/build/test-results/binary/test/results.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DataStructure/CharacterStateArray.java" afterPath="$PROJECT_DIR$/src/main/java/DataStructure/CharacterStateArray.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyHelpers/EncryptionHelper.java" afterPath="$PROJECT_DIR$/src/main/java/MyHelpers/EncryptionHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Encryption/Encryptor.java" afterPath="$PROJECT_DIR$/src/main/java/Encryption/Encryptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/classes/EncryptorTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/classes/EncryptorTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/classes/MyEncryptorTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/classes/MyEncryptorTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/classes/MyReaderTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/classes/MyReaderTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyHelpers/ReaderHelper.java" afterPath="$PROJECT_DIR$/src/main/java/MyHelpers/ReaderHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/classes/ReaderHelperTest.html" afterPath="$PROJECT_DIR$/build/reports/tests/classes/ReaderHelperTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/TEST-EncryptorTest.xml" afterPath="$PROJECT_DIR$/build/test-results/TEST-EncryptorTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/TEST-MyEncryptorTest.xml" afterPath="$PROJECT_DIR$/build/test-results/TEST-MyEncryptorTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/TEST-MyReaderTest.xml" afterPath="$PROJECT_DIR$/build/test-results/TEST-MyReaderTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/test-results/TEST-ReaderHelperTest.xml" afterPath="$PROJECT_DIR$/build/test-results/TEST-ReaderHelperTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyHelpers/WriterHelper.java" afterPath="$PROJECT_DIR$/src/main/java/MyHelpers/WriterHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/packages/default-package.html" afterPath="$PROJECT_DIR$/build/reports/tests/packages/default-package.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/reports/tests/index.html" afterPath="$PROJECT_DIR$/build/reports/tests/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/newTests.java" afterPath="$PROJECT_DIR$/src/main/java/newTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.dec.txt" afterPath="$PROJECT_DIR$/test.dec.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.enc.txt" afterPath="$PROJECT_DIR$/test.enc.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.txt" afterPath="$PROJECT_DIR$/test.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Encryption.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -178,21 +153,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.dec.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.dec.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.dec.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2948718">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.enc.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.enc.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.enc.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.021367522">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -612,6 +587,7 @@
         <option value="$PROJECT_DIR$/src/main/java/newTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyHelpers/WriterHelper.java" />
         <option value="$PROJECT_DIR$/test.txt" />
+        <option value="$PROJECT_DIR$/test.dec.txt" />
       </list>
     </option>
   </component>
@@ -1353,8 +1329,8 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905138" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2611336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23663366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2611336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23582996" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15814696" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.067625135" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1881,17 +1857,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.enc.txt">
+    <entry file="file://$PROJECT_DIR$/test.dec.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.dec.txt">
+    <entry file="file://$PROJECT_DIR$/test.enc.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2948718">
+        <state vertical-scroll-proportion="0.021367522">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
