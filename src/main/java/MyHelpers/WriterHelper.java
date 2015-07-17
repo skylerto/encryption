@@ -5,6 +5,8 @@ import Encryption.Encryptor;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by skylerlayne on 2015-07-16.
@@ -15,12 +17,12 @@ public class WriterHelper implements Runnable {
     private Encryptor encryptor;
     private Thread t;
     private PrintWriter writer;
-    private ArrayList<Character> array;
+    private Map array;
 
     public WriterHelper(String fileName, Encryptor enc){
         this.outFile = fileName;
         this.encryptor = enc;
-        this.array = new ArrayList<Character>();
+        this.array = new HashMap();
         try {
             this.writer = new PrintWriter(new File(this.outFile), "UTF-8");
         }catch (Exception e){
@@ -30,26 +32,23 @@ public class WriterHelper implements Runnable {
 
 
     public void write(){
-        for(Character c: array) {
-            this.writer.print(c);
+        for(long i = 0; i < array.size(); i++){
+            this.writer.print(array.get(i + 1));
         }
     }
 
     @Override
     public void run() {
         CharacterState c;
-
-        while(!encryptor.getArray().outputReady()){
+        while (!encryptor.output()) {
             synchronized (this) {
-                while (encryptor.getArray().anyWritable()) {
-                    c = encryptor.getArray().getWritable();
-                    array.add((int) c.getPosition(), c.getCharacter());
+                if ((c = encryptor.getArray().getWritable()) != null) {
+                    array.put(c.getPosition(), c.getCharacter());
                     encryptor.getArray().written(c);
                 }
             }
         }
         this.write();
-
     }
 
     public void start(){
@@ -59,11 +58,12 @@ public class WriterHelper implements Runnable {
 
     public void join(){
         try{
-            writer.close();
             t.join();
         } catch (Exception e){
             e.printStackTrace();
         }
+
+        writer.close();
     }
 
 

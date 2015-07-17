@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MyReaderTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2015-07-17T12:33:06" hostname="eduroam-95.eduroam.yorku.ca" time="0.048">
+<testsuite name="MyReaderTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2015-07-17T15:50:18" hostname="eduroam-95.eduroam.yorku.ca" time="0.02">
   <properties/>
-  <testcase name="testRead" classname="MyReaderTest" time="0.047">
+  <testcase name="testRead" classname="MyReaderTest" time="0.02">
     <failure message="junit.framework.AssertionFailedError: expected:&lt;true&gt; but was:&lt;false&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at junit.framework.Assert.fail(Assert.java:57)
 	at junit.framework.Assert.failNotEquals(Assert.java:329)
@@ -51,7 +51,7 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="testReadChar" classname="MyReaderTest" time="0.001"/>
+  <testcase name="testReadChar" classname="MyReaderTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

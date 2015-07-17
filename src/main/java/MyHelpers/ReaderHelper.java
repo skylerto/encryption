@@ -36,13 +36,10 @@ public class ReaderHelper implements Runnable {
     public void run() {
         while(this.moreInput()) {
             synchronized (this) {
-
                 CharacterState current = this.readChar();
-                //System.out.println("Character: " + current.getCharacter() + "State: " + current.getState() + "Position: " + current.getPosition());
                 encryptor.add(current);
             }
         }
-//        encryptor.toString();
     }
 
     public void start(){
@@ -76,11 +73,8 @@ public class ReaderHelper implements Runnable {
     public synchronized CharacterState readChar(){
         CharacterState state = null;
         try {
-            //if(inputStream.available() > 0) {
-                char c = (char) inputStream.read();
-                //System.out.print(c);
-                state = new CharacterState(c, inputStream.getChannel().position());
-          //  }
+            char c = (char) inputStream.read();
+            state = new CharacterState(c, inputStream.getChannel().position());
         } catch (Exception e){
             e.printStackTrace();
             state = null;

@@ -19,7 +19,7 @@ public class Encryptor {
 
     private String inputFileName;
     private String outputFileName;
-    private CharacterStateArray array = new CharacterStateArray();
+    private CharacterStateArray array;// = new CharacterStateArray();
 
      ReaderHelper readerHelper;
 
@@ -37,20 +37,23 @@ public class Encryptor {
     public Encryptor(String inputFile, String outputFile) {
         this.inputFileName = inputFile;
         this.outputFileName = outputFile;
-       // this.array = new CharacterStateArray();
+        this.array = new CharacterStateArray();
+    }
+
+    public void doEncryption(int key){
+        this.read();
+        this.encrypt(key);
+        this.write();
+        this.join();
     }
 
     public void read(){
         readerHelper = new ReaderHelper(this.inputFileName, this);
         readerHelper.start();
-        readerHelper.start();
-        readerHelper.start();
     }
 
     public void encrypt(int key) {
         encryptionHelper = new EncryptionHelper(key, this);
-        encryptionHelper.start();
-        encryptionHelper.start();
         encryptionHelper.start();
 
     }
@@ -58,14 +61,33 @@ public class Encryptor {
     public void write(){
         writerHelper = new WriterHelper(this.outputFileName, this);
         writerHelper.start();
-        writerHelper.start();
-        writerHelper.start();
 
     }
 
     public void join(){
         readerHelper.join();
         encryptionHelper.join();
+        writerHelper.join();
+    }
+
+    public synchronized boolean output(){
+        boolean ready = false;
+        synchronized(this){
+            for(int a = 0; a < this.getArray().size(); a++){
+                return this.getArray().outputReady();
+            }
+        }
+        return ready;
+    }
+
+    public synchronized boolean doneEncrypting(){
+        boolean ready = false;
+        synchronized (this){
+            for(int a = 0; a < this.getArray().size(); a++){
+                return this.getArray().anyEncryptable();
+            }
+        }
+        return false;
     }
 
 

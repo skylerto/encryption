@@ -12,15 +12,15 @@ public class CharacterStateArray {
         this.stateArray = new ArrayList<CharacterState>();
     }
 
-    public void add(CharacterState characterState){
+    public synchronized void add(CharacterState characterState){
         this.stateArray.add(characterState);
     }
 
-    public void encrypted(CharacterState characterState){
+    public synchronized void encrypted(CharacterState characterState){
         this.get(characterState).setState(1);
     }
 
-    public void written(CharacterState characterState){
+    public synchronized void written(CharacterState characterState){
         this.get(characterState).setState(2);
     }
 
@@ -32,12 +32,13 @@ public class CharacterStateArray {
      *
      * @return true if something is ready for encryption, false if otherwise.
      */
-    public boolean anyEncryptable(){
+    public synchronized boolean anyEncryptable(){
         boolean encryptable = false;
-        for(CharacterState c : stateArray){
-            if(c.getState() == 0){
+        for(CharacterState c : stateArray) {
+            if (c.getState() == 0) {
                 return true;
             }
+
         }
         return encryptable;
     }
@@ -47,7 +48,7 @@ public class CharacterStateArray {
      *
      * @return Return the first encryptable
      */
-    public CharacterState getEncryptable(){
+    public synchronized CharacterState getEncryptable(){
         CharacterState characterState = null;
         for(CharacterState c : stateArray){
             if(c.getState() == 0){
@@ -63,7 +64,7 @@ public class CharacterStateArray {
      *
      * @return true if something is ready for encryption, false if otherwise.
      */
-    public boolean anyWritable(){
+    public synchronized boolean anyWritable(){
         boolean encryptable = false;
         for(CharacterState c : stateArray){
             if(c.getState() == 1){
@@ -78,7 +79,7 @@ public class CharacterStateArray {
      *
      * @return Return the first encryptable
      */
-    public CharacterState getWritable(){
+    public synchronized CharacterState getWritable(){
         CharacterState characterState = null;
         for(CharacterState c : stateArray){
             if(c.getState() == 1){
@@ -88,7 +89,7 @@ public class CharacterStateArray {
         return characterState;
     }
 
-    public boolean outputReady(){
+    public synchronized boolean outputReady(){
         boolean ready = true;
         for(CharacterState c : stateArray){
             if(c.getState() != 2){
@@ -96,6 +97,10 @@ public class CharacterStateArray {
             }
         }
         return ready;
+    }
+
+    public synchronized CharacterState get(int index){
+        return this.stateArray.get(index);
     }
 
     @Override
@@ -110,13 +115,13 @@ public class CharacterStateArray {
         return stringBuilder.toString();
     }
 
-    public int size(){
+    public synchronized int size(){
         return stateArray.size();
     }
 
 
     /* y so circular? */
-    private CharacterState get(CharacterState characterState){
+    private synchronized CharacterState get(CharacterState characterState){
         return this.stateArray.get(this.stateArray.indexOf(characterState));
     }
 }

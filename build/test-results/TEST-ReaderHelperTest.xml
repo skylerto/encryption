@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ReaderHelperTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2015-07-17T12:33:06" hostname="eduroam-95.eduroam.yorku.ca" time="0.001">
+<testsuite name="ReaderHelperTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2015-07-17T15:50:18" hostname="eduroam-95.eduroam.yorku.ca" time="0.015">
   <properties/>
-  <testcase name="testRun" classname="ReaderHelperTest" time="0.0">
+  <testcase name="testRun" classname="ReaderHelperTest" time="0.015">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at ReaderHelperTest.testRun(ReaderHelperTest.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
