@@ -4,7 +4,7 @@
 
 # Description
 
-Working on an application as I work my way through the book "Java Concurrency in Practise" by Brian Goetz.
+Working on an application as I work my way through the book "Java Concurrency in Practise" by Brian Goetz. 
 
 # Usage
 
