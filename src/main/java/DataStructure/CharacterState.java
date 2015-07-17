@@ -28,10 +28,6 @@ public class CharacterState {
         return position;
     }
 
-    public void setPosition(long position) {
-        this.position = position;
-    }
-
     public char getCharacter() {
         return character;
     }
@@ -41,7 +37,7 @@ public class CharacterState {
     }
 
     public String toString(){
-        return "    Character: " + this.character + "\n"
+        return " Character: " + this.character + "\n"
                 + " State: " + this.state + "\n"
                 + " Position: " + this.position;
     }
