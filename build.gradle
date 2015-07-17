@@ -1,5 +1,5 @@
 group 'Encryption'
-version '0.1.0'
+version '0.1.1'
 
 apply plugin: 'java'
 apply plugin: 'application'
@@ -37,5 +37,5 @@ check.dependsOn unitTest
 
 jar {
     baseName = "Encryption"
-    version = "0.1.0"
+    version = "0.1.1"
 }

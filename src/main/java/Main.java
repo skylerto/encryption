@@ -1,4 +1,5 @@
 
+import Encryption.Encryptor;
 import org.apache.commons.cli.*;
 
 
@@ -37,25 +38,8 @@ public class Main {
                 outFile = cmd.getOptionValue("out");
                 key = Integer.parseInt(cmd.getOptionValue("key"));
 
-
-
-                list = new ArrayList();
-
-
-                FileHandler fileHandler = new FileHandler(inFile, outFile);
-
-                MyEncryptor encryptor = new MyEncryptor(key);
-
-                ArrayList inputList = fileHandler.readInput(list);
-
-                if(inputList.get(0).getClass().equals(Character.class)) {
-                    ArrayList encryptList = encryptor.encrypt(inputList);
-                    ArrayList outList = fileHandler.output(encryptList);
-                } else {
-                    System.out.println("Encryption failed, our fault!");
-                }
-
-
+                Encryptor encryptor = new Encryptor(inFile, outFile);
+                encryptor.doEncryption(key);
 
             } else {
                 HelpFormatter formatter = new HelpFormatter();
