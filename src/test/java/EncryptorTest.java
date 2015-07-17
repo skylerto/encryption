@@ -25,7 +25,7 @@ public class EncryptorTest extends TestCase {
      * @throws Exception
      */
     public void testEncryptPutsDifferent() throws Exception {
-        //assertEquals(key != 0, encryptor.getInput() != encryptor.getOutput());
+
     }
 
 
