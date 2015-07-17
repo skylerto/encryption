@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EncryptorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-07-17T12:33:06" hostname="eduroam-95.eduroam.yorku.ca" time="0.003">
+  <properties/>
+  <testcase name="testEncryptPutsDifferent" classname="EncryptorTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
