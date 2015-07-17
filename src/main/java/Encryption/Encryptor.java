@@ -4,6 +4,7 @@ import DataStructure.CharacterState;
 import DataStructure.CharacterStateArray;
 import MyHelpers.EncryptionHelper;
 import MyHelpers.ReaderHelper;
+import MyHelpers.WriterHelper;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -31,6 +32,7 @@ public class Encryptor {
     }
 
     EncryptionHelper encryptionHelper;
+    WriterHelper writerHelper;
 
     public Encryptor(String inputFile, String outputFile) {
         this.inputFileName = inputFile;
@@ -39,7 +41,7 @@ public class Encryptor {
     }
 
     public void read(){
-        readerHelper = new ReaderHelper("test.txt", this);
+        readerHelper = new ReaderHelper(this.inputFileName, this);
         readerHelper.start();
         readerHelper.start();
         readerHelper.start();
@@ -50,6 +52,14 @@ public class Encryptor {
         encryptionHelper.start();
         encryptionHelper.start();
         encryptionHelper.start();
+
+    }
+
+    public void write(){
+        writerHelper = new WriterHelper(this.outputFileName, this);
+        writerHelper.start();
+        writerHelper.start();
+        writerHelper.start();
 
     }
 

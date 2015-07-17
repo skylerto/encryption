@@ -19,7 +19,7 @@ public class newTests {
         encryptor.getEncryptionHelper().join();
         System.out.println("Encrypting: " + encryptor.toString());
 
-
+        encryptor.write();
         System.out.println("Writing: " + encryptor.toString());
 
 

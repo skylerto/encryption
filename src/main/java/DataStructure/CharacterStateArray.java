@@ -57,6 +57,47 @@ public class CharacterStateArray {
         return characterState;
     }
 
+        /*  Writing Preparations */
+    /**
+     * Check to see if anything is encryptable.
+     *
+     * @return true if something is ready for encryption, false if otherwise.
+     */
+    public boolean anyWritable(){
+        boolean encryptable = false;
+        for(CharacterState c : stateArray){
+            if(c.getState() == 1){
+                return true;
+            }
+        }
+        return encryptable;
+    }
+
+    /**
+     * Get the first value ready to be encrypted.
+     *
+     * @return Return the first encryptable
+     */
+    public CharacterState getWritable(){
+        CharacterState characterState = null;
+        for(CharacterState c : stateArray){
+            if(c.getState() == 1){
+                return c;
+            }
+        }
+        return characterState;
+    }
+
+    public boolean outputReady(){
+        boolean ready = true;
+        for(CharacterState c : stateArray){
+            if(c.getState() != 2){
+                return false;
+            }
+        }
+        return ready;
+    }
+
     @Override
     public synchronized String toString(){
         StringBuilder stringBuilder = new StringBuilder();
