@@ -12,6 +12,7 @@ import java.net.URL;
 public class SSHGrabber {
 
     public String username;
+    public String key;
 
     public SSHGrabber(String username){
         this.username = username;
@@ -25,6 +26,7 @@ public class SSHGrabber {
 
             try (BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream(), "UTF-8"))) {
                 for (String line; (line = reader.readLine()) != null;) {
+                    this.key = line;
                     return line;
                 }
             }
@@ -36,9 +38,14 @@ public class SSHGrabber {
         return key;
     }
 
+    public String parse(String key){
+        String fin = key.substring(key.indexOf(" ") + 1, key.length());
+        return fin;
+    }
+
     public static void main(String[] args) {
         SSHGrabber grabber = new SSHGrabber("skylerto");
-        System.out.print(grabber.grab());
+        grabber.parse(grabber.grab());
     }
 
 }
