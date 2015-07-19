@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DataStructure.CharacterStateTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-07-17T20:08:44" hostname="Skylers-MacBook-Pro.local" time="0.006">
+  <properties/>
+  <testcase name="testGetPosition" classname="DataStructure.CharacterStateTest" time="0.002"/>
+  <testcase name="testGetCharacter" classname="DataStructure.CharacterStateTest" time="0.0"/>
+  <testcase name="testGetState" classname="DataStructure.CharacterStateTest" time="0.0"/>
+  <testcase name="testToString" classname="DataStructure.CharacterStateTest" time="0.001"/>
+  <testcase name="testSetCharacter" classname="DataStructure.CharacterStateTest" time="0.0"/>
+  <testcase name="testSetState" classname="DataStructure.CharacterStateTest" time="0.0"/>
+  <system-out><![CDATA[***Testing getPosition()***
+***Testing getCharacter()***
+***Testing getState()***
+***Testing toString()***
+***Testing getCharacter()***
+***Testing setState()***
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

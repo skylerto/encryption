@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EncryptorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-07-17T19:20:29" hostname="eduroam-95.eduroam.yorku.ca" time="0.058">
+<testsuite name="EncryptorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-07-17T20:08:44" hostname="Skylers-MacBook-Pro.local" time="0.032">
   <properties/>
-  <testcase name="testMoreInput" classname="EncryptorTest" time="0.03"/>
-  <testcase name="testReadChar" classname="EncryptorTest" time="0.027"/>
+  <testcase name="testMoreInput" classname="EncryptorTest" time="0.006"/>
+  <testcase name="testReadChar" classname="EncryptorTest" time="0.025"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
